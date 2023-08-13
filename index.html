@@ -12,7 +12,7 @@
 </head>
 
 <body class="container">
-    <header class="header">
+    <header class="header container">
         <div class="container-inicio">
             <div class="header__encabezado">
                 <div class="encabezado__logo">
@@ -44,7 +44,7 @@
 
     <main>
         <section class="hero">
-            <div id="carouselExampleCaptions" class="carousel slide">
+            <div id="carouselExampleCaptions container" class="carousel slide">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></button>
@@ -88,22 +88,30 @@
                 </button>
             </div>
         </section>
+
+        <!--Utilizando clases de Boostrap-->
         <section class="container-fluid">
-            <div class="row">
-                <article class="col-4 conteiner__cards">
+            <div class="row container__cards">
+                <article class="col-4 cards card-envio">
                     <img src="./media/favicon/camion.svg" alt="">
-                    <h3>Envío Gratis</h3>
-                    <p>A todo el país</p>
+                    <div class="text__cards">
+                        <h3>Envío Gratis</h3>
+                        <p>A todo el país</p>
+                    </div>
                 </article>
-                <article class="col-4 conteiner__cards">
+                <article class="col-4 cards card-minimo">
                     <img src="./media/favicon/canasto.svg" alt="">
-                    <h3>Mínimo de compra</h3>
-                    <p>$15.000</p>
+                    <div class="text__cards">
+                        <h3>Mínimo de compra</h3>
+                        <p>$15.000</p>
+                    </div>
                 </article>
-                <article class="col-4 conteiner__cards">
+                <article class="col-4 cards card-pago">
                     <img src="./media/favicon/cards.svg" alt="">
-                    <h3>Pagá con tarjeta</h3>
-                    <P>Débito y crédito</P>
+                    <div class="text__cards">
+                        <h3>Pagá con tarjeta</h3>
+                        <P>Débito y crédito</P>
+                    </div>
                 </article>
             </div>
         </section>

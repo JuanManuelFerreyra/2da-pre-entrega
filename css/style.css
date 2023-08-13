@@ -140,12 +140,64 @@ body {
 }
 
 .contanier__cards {
-    min-width: 33.33%;
+    display: flex;
+    justify-content: space-between;
 
 }
 
-.conteiner__cards img {
+.cards {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.cards img {
     height: 10rem;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        min-height: fit-content;
+    }
+
+    .container__cards {
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .cards {
+        margin-bottom: 20px;
+
+    }
+
+    .card-envio,
+    .card-pago,
+    .card-minimo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-envio,
+    .card-pago {
+        flex-direction: row-reverse;
+        padding: 0;
+    }
+
+    .text__cards {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .text__cards h3 {
+        width: 14rem;
+    }
+
+    .
 }
 
 .footer {
