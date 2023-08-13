@@ -24,18 +24,26 @@
                 <input type="search" name="busqueda" id="busqueda" class="buscar">
 
                 <div class="favicons">
-                    <a href=""><i class="bi bi-person-fill loginn"></i></a>
-                    <a href=""><i class="bi bi-cart-fill loginn"></i></a>
+                    <a href="" class="usuario"><i class="bi bi-person-fill loginn"></i></a>
+                    <a href="" class="carrito"><i class="bi bi-cart-fill loginn"></i></a>
                 </div>
             </div>
 
 
             <nav class="container__nav">
                 <ul class="nav__links">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="./paginas/productos.html">Productos</a></li>
-                    <li><a href="./paginas/somos.html">Quienes somos</a></li>
-                    <li><a href="./paginas/contacto.html">Contacto</a></li>
+                    <li>
+                        <a href="index.html" class="active">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="./paginas/productos.html">Productos</a>
+                    </li>
+                    <li>
+                        <a href="./paginas/somos.html">Somos</a>
+                    </li>
+                    <li>
+                        <a href="./paginas/contacto.html">Contacto</a>
+                    </li>
                 </ul>
                 <a href="./crea-tu-marca/crea.html" class="especial">Crea tu Marca</a>
             </nav>
@@ -44,53 +52,48 @@
 
     <main>
         <section class="hero">
-            <div id="carouselExampleCaptions container" class="carousel slide">
+            <div id="carouselExampleCaptions" class="carousel slide">
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselEx mpleCaptions" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
-                    <div class="carousel-item active tamaño__imagenes">
-                        <img src="./media/campo-de-lavanda.jpg" class="d-block w-100" alt="">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>First slide label</h5>
-                            <p>Some representative placeholder content for the first slide.</p>
-                        </div>
+                  <div class="carousel-item active">
+                    <img src="./media/campo-de-lavanda.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>First slide label</h5>
+                      <p>Some representative placeholder content for the first slide.</p>
                     </div>
-                    <div class="carousel-item tamaño__imagenes">
-                        <img src="./media/campo-de-lavanda_2.jpg" class="d-block w-100" alt="">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Second slide label</h5>
-                            <p>Some representative placeholder content for the second slide.</p>
-                        </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./media/campo-de-lavanda.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Second slide label</h5>
+                      <p>Some representative placeholder content for the second slide.</p>
                     </div>
-                    <div class="carousel-item tamaño__imagenes">
-                        <img src="./media/campo-de-lavanda_3.jpg" class="d-block w-100" alt="">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Third slide label</h5>
-                            <p>Some representative placeholder content for the third slide.</p>
-                        </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./media/campo-de-lavanda.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Third slide label</h5>
+                      <p>Some representative placeholder content for the third slide.</p>
                     </div>
+                  </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
                 </button>
-            </div>
+              </div>
         </section>
 
         <!--Utilizando clases de Boostrap-->
-        <section class="container-fluid">
+        <section class="container-fluid container">
             <div class="row container__cards">
                 <article class="col-4 cards card-envio">
                     <img src="./media/favicon/camion.svg" alt="">
@@ -115,10 +118,14 @@
                 </article>
             </div>
         </section>
+        
     </main>
 
     <footer class="container footer">
-        <ul>
+        <section class="crear-marca">
+            <a href="./paginas/crea.html" class="crear-marca_enlace">Crea tu Marca</a>
+        </section>
+        <ul class="lineas-de-contacto">
             <li>
                 <i class="bi bi-facebook redd"></i>
                 <a href="">Pampeanos</a>

@@ -107,7 +107,9 @@ body {
     margin: 10px;
 }
 
-
+.nav__smartphone {
+    display: none;
+}
 
 .especial {
     color: var(--claro);
@@ -155,7 +157,36 @@ body {
     height: 10rem;
 }
 
-@media (max-width: 768px) {
+.crear-marca {
+    display: none;
+}
+
+@media (max-width: 480px) {
+    .header__encabezado {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        margin: 0.5rem 0;
+        padding: 1rem;
+    }
+
+    :is(.buscar, .especial, .usuario) {
+        display: none;
+    }
+
+    .favicons {
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav__links li {
+        margin: 0;
+        padding: 0;
+    }
+
     .hero {
         min-height: fit-content;
     }
@@ -186,6 +217,11 @@ body {
     .card-pago {
         flex-direction: row-reverse;
         padding: 0;
+        margin-right: 3rem;
+    }
+
+    .card-minimo .text__cards {
+        margin-left: 1rem;
     }
 
     .text__cards {
@@ -195,10 +231,39 @@ body {
 
     .text__cards h3 {
         width: 14rem;
+        flex-direction: initial;
     }
 
-    .
+    .crear-marca {
+        display: block;
+    }
+
+    .crear-marca_enlace {
+        color: var(--claro);
+        background-color: var(--dark-purple);
+
+        padding: 0.5rem 1rem; 
+        font-size: 1.2rem;
+        border-radius: 5px;
+    }
+
+    .crear-marca_enlace:hover {
+        color: var(--dark-purple);
+        background-color: var(--claro);
+    }
+
+    .footer .lineas-de-contacto , h5{
+        display: none;
+    }
+
+    .container .footer {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 }
+
+
 
 .footer {
     min-height: 5rem;
