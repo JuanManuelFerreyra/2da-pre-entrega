@@ -297,7 +297,20 @@ body {
 
     .container-somos {
         display: grid;
-        grid-template-rows: 1fr 9fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "imagen imagen imagen imagen"
+        "text-somos text-somos text-somos text-somos"
+        ;
+    }
+
+    .container__somos img {
+        min-height: 10px;
+        grid-area: imagen;
+    }
+
+    .container__somos p {
+        grid-area: text-somos;
     }
 }
 
@@ -349,6 +362,7 @@ body {
 
 .main__contacto {
     margin-top: 1rem;
+    min-height: 450px;
 }
 
 .container__info {
@@ -440,4 +454,15 @@ body {
 .button__crea:hover {
     color: #000000;
     background-color: var(--claro);
+}
+
+.container__tienda {
+    margin-top: 1rem;
+    min-height: 450px;
+}
+
+.titulo__tienda {
+    font-size: 2rem;
+    padding: 2rem;
+    border: 5px solid var(--dark-purple);
 }
