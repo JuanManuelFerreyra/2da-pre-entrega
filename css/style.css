@@ -398,3 +398,41 @@ body {
 .container_somos img {
     width: 25rem;
 }
+
+.main__crea {
+    padding: 2rem;
+    min-height: 500px;
+}
+
+.main__crea h2 {
+    padding: 2rem;
+    border: 5px solid var(--dark-purple);
+}
+
+.ul__tarjetas {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.tarjeta {
+    gap: 2rem;
+
+}
+
+.tarjeta p {
+    font-size: 1.2rem;
+    color: #000000;
+}
+
+.button__crea {
+    width: 300px;
+    padding: 0.5rem;
+    margin: 1rem;
+    font-size: 1.2rem;
+
+    color: var(--claro);
+    background-color: var(--dark-slate-gray);
+    border-radius: 5px;
+}
